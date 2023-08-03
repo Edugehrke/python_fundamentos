@@ -14,13 +14,13 @@
 	dados do tipo float e string, e armazene todos os dados em variáveis. Em seguida
 	adicione todos esses items em uma lista e mostre os item através de um laço de repetição for. 
 
-# Exercicio 3:
+# Exercicio 4:
 	Desenvolva uma função que mostre na tela uma contagem regressiva de 5 a 1, com uma pausa de um segundo entre cada número.
 
-# Exercicio 4:
+# Exercicio 5:
 	Crie uma função que exiba uma mensagem perguntando a idade do usuário e, com base na idade fornecida,
 	exiba diferentes mensagens de acordo com as seguintes faixas etárias: 0-12 anos, 13-17 anos, 18 ou mais anos.
 	(mais faixas etárias podem ser incluídas)
 
-# Exercicio 5:
+# Exercicio 6:
 	Crie uma função que solicite ao usuário que insira seu endereço completo (incluindo rua, número, bairro, cidade e CEP) e armazene as informações em variáveis separadas. Depois mostre essas 	informações usando concatenação com uma mensagem.

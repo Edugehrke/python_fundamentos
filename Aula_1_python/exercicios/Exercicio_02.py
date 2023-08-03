@@ -4,16 +4,21 @@
 
 import os
 
+
+def calcula_media():
+    media = 0
+    try: 
+        for i in range(3):
+             valor = int(input(f'Insira o {i + 1} valor para media: '))
+             media = valor + media
+        media = media/3
+        print('A sua media é: ', media)
+    except:
+        print('Nao é um valor valido!')
+       
 if __name__ == '__main__':
     os.system('cls')
-    
-    media_valor = [
-
-    ]
-
-    for i in range(3):
-        valor = input(f'Insira o {i + 1} valor para media: ')
-        media_valor.append(valor)
+    calcula_media()
 
         
         
