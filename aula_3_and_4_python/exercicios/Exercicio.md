@@ -19,7 +19,7 @@
         Crie uma classe chamada Triangulo que represente um triângulo. A classe deve ter os atributos lado1, lado2 e lado3.
         Crie métodos para verificar se os lados formam um triângulo válido (eh_valido()), calcular o perímetro (calcular_perimetro())
         e exibir o tipo do triângulo com base nos lados (tipo_triangulo()).
-
+        
         6 - Classe Aluno:
         Crie uma classe chamada Aluno que represente um aluno. A classe deve ter os atributos nome, matricula e notas (uma lista de notas).
         Crie métodos para calcular a média (calcular_media()) e exibir o status do aluno com base na média (exibir_status()).
