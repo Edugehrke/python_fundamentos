@@ -108,8 +108,11 @@ if __name__ == '__main__':
     )
 
 Cavalo_1.exibir_informacoes()
+
 Cavalo_2.exibir_informacoes()
+
 gato_objeto.exibir_informacoes()
+
 cao_objeto.exibir_informacoes()
 
 
