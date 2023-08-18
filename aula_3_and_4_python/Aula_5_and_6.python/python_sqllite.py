@@ -9,18 +9,13 @@ class BancoDeDados:
     conexao = None
     @staticmethod  
     def criar_conexao(database,user,password,host,port):
-        BancoDeDados.conexao = psycopg2.connect(database,
-         user,
-         password,
-         host,
-         port)
-        print('Conexão estabelecida com sucesso.')
+        BancoDeDados.conexao = psycopg2.connect(database,user,password,host,port)
+        print('Conexão estabelecida com sucesso.')      
         return BancoDeDados.conexao
 
     @staticmethod
     def criar_tabela(nome_tabela_nova):
-        cur = BancoDeDados.conexao.cursor()
-
+        cursor = BancoDeDados.conexao.cursor()
         sql_string = f''' 
             create table if not exists {nome_tabela_nova} (\
                 id integer primary key,\
@@ -29,8 +24,8 @@ class BancoDeDados:
                 email text(40)
             )
         '''
-        cur.execute(sql_string)
-        cur.close()
+        cursor.execute(sql_string)
+        cursor.close()
         print(f'Tabela {nome_tabela_nova} criada com sucesso.')
 
     @staticmethod
@@ -72,14 +67,9 @@ class BancoDeDados:
 
 def database_manager():
     os.system('cls')
-    BancoDeDados.criar_conexao('Strong_conv','postgres','Strong123@','localhost','5432')
-    try:
-        conn = psycopg2.connect(database = "Strong_conv", user="postgres", password = "Strong123@", host = "localhost", port = "5432")
-        print(conn.info)
-        print(conn.status)
-        print('conexao estabelecida com sucesso!')
-    except:
-        print('ERRO')
+    conn = BancoDeDados.criar_conexao('Strong_conv','postgres','Strong123@','localhost','5432')
+
+
     menu_interface = '''
 1 - Criar tabela
 2 - Inserir dados
